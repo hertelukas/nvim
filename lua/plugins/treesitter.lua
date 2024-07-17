@@ -1,0 +1,60 @@
+local ts_langs = {
+    "bash",
+    "c",
+    "cmake",
+    "comment",
+    "cpp",
+    "cuda",
+    "dockerfile",
+    "doxygen",
+    "git_config",
+    "git_rebase",
+    "gitattributes",
+    "gitcommit",
+    "gitignore",
+    "go",
+    "html",
+    "htmldjango",
+    "http",
+    "java",
+    "javascript",
+    "jsdoc",
+    "json",
+    "json5",
+    "jsonc",
+    "latex",
+    "llvm",
+    "lua",
+    "luadoc",
+    "make",
+    "markdown",
+    "markdown_inline",
+    "meson",
+    "ninja",
+    "python",
+    "query",
+    "regex",
+    "requirements",
+    "rust",
+    "scss",
+    "sql",
+    "typescript",
+    "vim",
+    "vimdoc",
+    "xml",
+    "yaml",
+}
+
+local ts_opts = {
+	ensure_installed = ts_langs,
+	sync_install = true,
+	highlight = { enable = true}
+}
+
+return {
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	config = function()
+		require("nvim-treesitter.configs").setup(ts_opts)
+	end,
+}
