@@ -7,6 +7,7 @@ local ts_langs = {
     "cuda",
     "dockerfile",
     "doxygen",
+    "gdscript",
     "git_config",
     "git_rebase",
     "gitattributes",

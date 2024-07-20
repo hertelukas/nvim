@@ -73,6 +73,10 @@ return {
         require("lspconfig").clangd.setup({})
         require("lspconfig").volar.setup({})
         require("lspconfig").tsserver.setup({})
+        require("lspconfig").omnisharp.setup({
+            cmd = { "omnisharp"}
+        })
+        require("lspconfig").pyright.setup({})
 
         vim.diagnostic.config({
             virtual_text = false
