@@ -72,7 +72,7 @@ return {
         })
         require("lspconfig").clangd.setup({})
         require("lspconfig").volar.setup({})
-        require("lspconfig").tsserver.setup({})
+        require("lspconfig").ts_ls.setup({})
         require("lspconfig").omnisharp.setup({
             cmd = { "omnisharp"}
         })
